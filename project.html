@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaKiRi's website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Digital artist</p>
+            <h1>Zuzana Droppova a.k.a. <span>LaKiRi</span></h1>
+        </div>
+    </div> 
+</div>
+<!----------------about---------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me:</h1>
+                <h2>I was born in Slovakia in 1979. <br>
+                    Since 2018 I've been living in Brussels, Belgium.<br>
+                    I work as a developer and in my free time I love doing digital art. <br>
+                    You can find my illustrations in countless number of books and magasines. <br> 
+                    In Brussels, you could have seen my artworks several times in the Center of fantastic art.</h2>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('prices')">Prices</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Designs</span><br>Logos<br>Illustrations<br>Portraits</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Gimp</span><br>Krita<br>Corel painter</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="prices">
+                        <ul>
+                            <li><span>From 60 to 120€ / hour</span></li>
+                        </ul>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- --------------portfolio----------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My artworks:</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="1-KiRi-Cal2023.jpg">
+            </div>
+            <div class="work">
+                <img src="A swamp creeper.jpg">
+            </div>
+            <div class="work">
+                <img src="az me povolaji k sobe.jpg">
+            </div>
+            <div class="work">
+                <img src="blue dragons.jpg">
+            </div>
+            <div class="work">
+                <img src="Blue urban vector.jpg">
+            </div>
+            <div class="work">
+                <img src="bros.jpg">
+            </div>
+            <div class="work">
+                <img src="Certosa from Hell.jpg">
+            </div>
+            <div class="work">
+                <img src="Charon 3 obalka by KiRi.jpg">
+            </div>
+            <div class="work">
+                <img src="crow.jpg">
+            </div>
+            <div class="work">
+                <img src="error.jpg">
+            </div>
+            <div class="work">
+                <img src="her.jpg">
+            </div>
+            <div class="work">
+                <img src="jupiter14cover.jpg">
+            </div>
+            <div class="work">
+                <img src="king of this wood.jpg">
+            </div>
+            <div class="work">
+                <img src="Lucka1.jpg">
+            </div>
+            <div class="work">
+                <img src="man of my dreams.jpg">
+            </div>
+            <div class="work">
+                <img src="Nasleduj bieleho kralika.jpg">
+            </div>
+            <div class="work">
+                <img src="NEUROMANCER.jpg">
+            </div>
+            <div class="work">
+                <img src="octopi.jpg">
+            </div>
+            <div class="work">
+                <img src="papa-legba.jpg">
+            </div>
+            <div class="work">
+                <img src="post apo baby.JPG">
+            </div>
+            <div class="work">
+                <img src="PTRSLV12345.jpg">
+            </div>
+            <div class="work">
+                <img src="Sesivance 2 obalka od KiRi.jpg">
+            </div>
+            <div class="work">
+                <img src="SLOVENSKE TEMNO final1.jpg">
+            </div>
+            <div class="work">
+                <img src="space kitty1.JPG">
+            </div>
+            <div class="work">
+                <img src="space monster.jpg">
+            </div>
+            <div class="work">
+                <img src="Ti co prichadzaju v tme.jpg">
+            </div>
+            <div class="work">
+                <img src="ukraine FINAL COVER.jpg">
+            </div>
+            <div class="work">
+                <img src="Z popola.jpg">
+            </div>
+            <div class="work">
+                <img src="zilinska nemocnica.jpg">
+            </div>
+        </div>
+            
+    </div>
+</div>
+<div class="container">
+    <form action="styles.css">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Select a country...</option>
+        <option value="australia">Belgium</option>
+        <option value="canada">Netherlands</option>
+        <option value="usa">France</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+
+<div id="contact">
+    <h3>Contact:</h3>
+    <h1>lakiri@gmail.com</h1>
+    
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    let mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+
+</script>
+
+</body>
+</html>
